@@ -1,14 +1,17 @@
 body {
-    background-color: red;
+    color: #0000FF;
 }
 
 .grid {
-    margin: 0 auto;
+	position:fixed;
+	 overflow-y: auto;
+    margin: 20% auto 50 35% ;
     width: 80vw;
-    max-width: 60vh;
+    max-width: 30vh;
     height: 80vw;
-    max-height: 60vh;
+    max-height: 30vh;
     font-size: 1rem;
+    z-index: 10;
 }
 .row {
     display: flex;
@@ -41,3 +44,12 @@ body {
 .empty{
 	visibility:hidden
 }
+
+
+
+.shirt{
+	float:right;
+}
+.child {
+	height:100%;
+	margin:20px;}
