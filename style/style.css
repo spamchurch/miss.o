@@ -5,11 +5,11 @@ body {
 .grid {
 	position:fixed;
 	 overflow-y: auto;
-    margin: 20% auto 50 35% ;
+    margin: 20% auto 50 42% ;
     width: 80vw;
-    max-width: 30vh;
+    max-width: 15vh;
     height: 80vw;
-    max-height: 30vh;
+    max-height: 15vh;
     font-size: 1rem;
     z-index: 10;
 }
@@ -45,7 +45,13 @@ body {
 	visibility:hidden
 }
 
+.logo{
+	position: fixed;
+}
 
+.text{
+	padding-top: 60%
+}
 
 .shirt{
 	float:right;
