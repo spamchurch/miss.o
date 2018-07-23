@@ -1,18 +1,22 @@
  <html>
  <head>
  <link rel="stylesheet" type="text/css" href="style/style.css">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300i" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <link rel="stylesheet" type="text/css" href="style/bootstrap-iso.css">
  <style>
 body {
     background-color:#FFFFFF;
 }
+
+.row .red{
+    position: absolute;
+}
 </style>
 
 </head>
 <body>
-<img src="assets/logos/loop5.gif" height = "20" class = "logo">
+<img src="assets/logos/loop6.gif" height = "25" class = "logo">
 		<div class="grid" id = 'fixed'>
     <div class="row">
         <div class="empty box"><div class="inner"></div></div>
@@ -36,11 +40,17 @@ body {
 </div>
 <div class = "bootstrap-iso">
 <div class="row">
-  <div class="col-md-8"><div class = "text">elephant tee<br>$450<br>sold out</div></div>
-  <div class="col-md-4"><img src="assets/elephantT.png" height = "100%" class = "shirt"></div>
+  <div class="red col-xs-9"><div class = "text">&nbsp&nbspELEPHANT TEE</div>
+  <div class = "descT"><div style = "display:none">this paisley printed, relaxed fit shirt has a wide box pleat, mitered cuffs, a curved hem and large tonal mother of pearl buttons.</div></div>
+  <br>
+  <div class = "price">&nbsp&nbspUSD 450</div>
+</div>
+
+
+  <div class="blue col-xs-6 col-xs-push-6"><img src="assets/elephantT.png" height = "100%" class = "shirt"></div>
 </div>
 <div class="row">
-  <div class="col-md-8"><div class = "text">dog tee<br>$450<br>sold out</div></div>
+  <div class="desc col-md-8"><div class = "text">dog tee<br>$450<br>sold out</div></div>
   <div class="col-md-4"><img src="assets/elephantT.png" height = "100%" class = "shirt"></div>
 </div>
 </div>
@@ -58,6 +68,16 @@ body {
     </div>
         
 </div> -->
+<script>
+	var i;
+	var text = $( ".descT" ).text();
+	for (i = 0; i < 5; i++) { 
+		space = "&nbsp".repeat(Math.floor(Math.random() * 10))
+		
+   		$( ".descT" ).append("<br>".concat(space).concat(text));
+	}
+	
 
+</script>
 </body>
  </html>
