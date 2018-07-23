@@ -40,10 +40,10 @@ body {
 </div>
 <div class = "bootstrap-iso">
 <div class="row">
-  <div class="red col-xs-9"><div class = "text">&nbsp&nbspELEPHANT TEE</div>
+  <div class="red col-xs-9"><div class = "text">&thinsp;&thinsp;ELEPHANT TEE</div>
   <div class = "descT"><div style = "display:none">this paisley printed, relaxed fit shirt has a wide box pleat, mitered cuffs, a curved hem and large tonal mother of pearl buttons.</div></div>
   <br>
-  <div class = "price">&nbsp&nbspUSD 450</div>
+  <div class = "price">&thinsp;&thinsp;USD 450</div>
 </div>
 
 
@@ -72,7 +72,7 @@ body {
 	var i;
 	var text = $( ".descT" ).text();
 	for (i = 0; i < 5; i++) { 
-		space = "&nbsp".repeat(Math.floor(Math.random() * 10))
+		space = "&thinsp;".repeat(Math.floor(Math.random() * 20))
 		
    		$( ".descT" ).append("<br>".concat(space).concat(text));
 	}
